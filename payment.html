@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>             
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="cursor.css">  
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="payment.css" />
+    <title>Glassmorphism Credit Card Form</title>
+  </head>
+  <body>
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
+<script>
+    var cursor = document.querySelector(".cursor")
+    var cursor2 = document.querySelector(".cursor2")
+    document.addEventListener("mousemove", function(e)
+    {
+        cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
+    });
+
+</script>
+    <div class="card">
+      <form>
+        <h1 class="card__title">Enter Payment Information</h1>
+        <div class="card__row">
+          <div class="card__col">
+            <label for="cardNumber" class="card__label">Card Number</label
+            ><input
+              type="text"
+              class="card__input card__input--large"
+              id="cardNumber"
+              placeholder="xxxx-xxxx-xxxx-xxxx"
+            />
+          </div>
+          <div class="card__col card__chip">
+            <img src="img/chip.svg" alt="chip" />
+          </div>
+        </div>
+        <div class="card__row">
+          <div class="card__col">
+            <label for="cardExpiry" class="card__label">Expiry Date</label
+            ><input
+              type="text"
+              class="card__input"
+              id="cardExpiry"
+              placeholder="xx/xx"
+            />
+          </div>
+          <div class="card__col">
+            <label for="cardCcv" class="card__label">CCV</label
+            ><input
+              type="text"
+              class="card__input"
+              id="cardCcv"
+              placeholder="xxx"
+            />
+          </div>
+          <div class="card__col card__brand"><i id="cardBrand"></i></div>
+        </div>
+      </form>
+      
+    <!--<input class="pay" type="submit" value="Pay">-->
+    <button onclick="alert('Payment Successful!!')">Pay</button>
+
+    <a href="shop.html"><button>Home</button></a>
+   
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/cleave.js@1.6.0/dist/cleave.min.js"></script>
+    <script src="payment.js"></script>
+    <script>
+      var ALERT_TITLE = "Yay!";
+var ALERT_BUTTON_TEXT = "Ok";
+
+if(document.getElementById) {
+	window.alert = function(txt) {
+		createCustomAlert(txt);
+	}
+}
+
+function createCustomAlert(txt) {
+	d = document;
+
+	if(d.getElementById("modalContainer")) return;
+
+	mObj = d.getElementsByTagName("body")[0].appendChild(d.createElement("div"));
+	mObj.id = "modalContainer";
+	mObj.style.height = d.documentElement.scrollHeight + "px";
+	
+	alertObj = mObj.appendChild(d.createElement("div"));
+	alertObj.id = "alertBox";
+	if(d.all && !window.opera) alertObj.style.top = document.documentElement.scrollTop + "px";
+	alertObj.style.left = (d.documentElement.scrollWidth - alertObj.offsetWidth)/2 + "px";
+	alertObj.style.visiblity="visible";
+
+	h1 = alertObj.appendChild(d.createElement("h1"));
+	h1.appendChild(d.createTextNode(ALERT_TITLE));
+
+	msg = alertObj.appendChild(d.createElement("p"));
+	//msg.appendChild(d.createTextNode(txt));
+	msg.innerHTML = txt;
+
+	btn = alertObj.appendChild(d.createElement("a"));
+	btn.id = "closeBtn";
+	btn.appendChild(d.createTextNode(ALERT_BUTTON_TEXT));
+	btn.href = "#";
+	btn.focus();
+	btn.onclick = function() { removeCustomAlert();return false; }
+
+	alertObj.style.display = "block";
+	
+}
+
+function removeCustomAlert() {
+	document.getElementsByTagName("body")[0].removeChild(document.getElementById("modalContainer"));
+}
+function ful(){
+alert('Payment Successful!!');
+}
+    </script>
+  </body>
+</html>

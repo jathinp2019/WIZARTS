@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap');
+.logo {
+    color: lightyellow;
+    --color1: yellow;
+    --color2: orange;
+    --color3: brown;
+    --color4: purple;
+    --interval: 1s;
+    display: block;
+    text-shadow: 
+      0 0 10px var(--color1),
+      0 0 20px var(--color2),
+      0 0 40px var(--color3),
+      0 0 80px var(--color4);
+    will-change: filter, color;
+    filter: saturate(60%);
+    animation: flicker steps(100) var(--interval) 1s infinite;
+    font-family: Bad Script;
+  
+  }
+  .title1{
+    position: relative;
+    bottom: 100px;
+    color: rgb(204, 0, 255);
+    --color1: rgb(141, 1, 141);
+    --color2: rgb(1, 1, 121);
+    --color3: rgb(68, 68, 173);
+    --color4: blue;
+    font-family: Londrina Outline;
+    --interval: 1s;
+    display: block;
+    text-shadow: 
+      0 0 10px var(--color1),
+      0 0 20px var(--color2),
+      0 0 40px var(--color3),
+      0 0 80px var(--color4);
+    will-change: filter, color;
+    filter: saturate(60%);
+    animation: flicker steps(100) var(--interval) 1s infinite;
+  }
+  .title2{
+    position: relative;
+    bottom: 100px;
+    color: rgb(255, 159, 231);
+    --color1: rgb(228, 78, 195);
+    --color2: rgb(255, 159, 231);
+    --color3: rgb(255, 174, 248);
+    --color4: rgb(241, 83, 220);
+    font-family: Londrina Outline;
+    --interval: 1s;
+    display: block;
+    text-shadow: 
+      0 0 10px var(--color1),
+      0 0 20px var(--color2),
+      0 0 40px var(--color3),
+      0 0 80px var(--color4);
+    will-change: filter, color;
+    filter: saturate(60%);
+    animation: flicker steps(100) var(--interval) 1s infinite;
+  }
+  .title3{
+    position: relative;
+    bottom: 100px;
+    color: lightyellow;
+    --color1: rgb(247, 0, 255);
+    --color2: rgba(255, 0, 212, 0.575);
+    --color3: rgba(255, 13, 243, 0.349);
+    --color4: rgb(234, 0, 255);
+    --interval: 1s;
+    display: block;
+    text-shadow: 
+      0 0 10px var(--color1),
+      0 0 20px var(--color2),
+      0 0 40px var(--color3),
+      0 0 80px var(--color4);
+    will-change: filter, color;
+    filter: saturate(60%);
+    animation: flicker steps(100) var(--interval) 1s infinite;
+    font-family:  Londrina Outline;
+  
+  }
+  .title4{
+    position: relative;
+    bottom: 100px;
+    color: rgb(255, 255, 255);
+    --color1: rgb(7, 7, 7);
+    --color2: rgba(255, 255, 255, 0.781);
+    --color3: rgba(255, 255, 255, 0.76);
+    --color4: rgb(235, 225, 225);
+    --interval: 1s;
+    display: block;
+    text-shadow: 
+      0 0 10px var(--color1),
+      0 0 20px var(--color2),
+      0 0 40px var(--color3),
+      0 0 80px var(--color4);
+    will-change: filter, color;
+    filter: saturate(60%);
+    animation: flicker steps(100) var(--interval) 1s infinite;
+    font-family:  Londrina Outline;
+  
+  }
+  .titles{
+    position: relative;
+    bottom: 100px;
+    color: lightyellow;
+    --color1: gold;
+    --color2: firebrick;
+    --color3: pink;
+    --color4: red;
+    font-family: Londrina Outline;
+    --interval: 1s;
+    display: block;
+    text-shadow: 
+      0 0 10px var(--color1),
+      0 0 20px var(--color2),
+      0 0 40px var(--color3),
+      0 0 80px var(--color4);
+    will-change: filter, color;
+    filter: saturate(60%);
+    animation: flicker steps(100) var(--interval) 1s infinite;
+  }
+  @keyframes flicker {
+    50% {
+      color: white;
+      filter: saturate(200%) hue-rotate(20deg);
+    }
+  }
+  header{
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 200px;
+    transition: 0.5s ease;
+  }
+  
+  header .brand{
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: 70;
+    text-transform: uppercase;
+    text-decoration: none;
+    
+    font-size: 80px;
+    position:absolute;
+    left:60px;
+    top:30px;
+  }
+  
+  header .navigation{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    min-height: 100vh;
+    background: transparent;
+    position: fixed;
+    right: 50px;
+    bottom:320px;
+  }
+  
+  header .navigation .navigation-items a{
+    position: relative;
+    padding: 10px 20px;
+    margin: 0 15px;
+    color:cyan;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 14px;
+    transition: 0.5s;
+    overflow: hidden;
+    
+  }
+  header .navigation .navigation-items a:nth-child(1){
+    filter: hue-rotate(115deg);
+  }
+  header .navigation .navigation-items a:nth-child(3){
+    filter: hue-rotate(270deg);
+  }
+  header .navigation .navigation-items a:nth-child(4){
+    filter: hue-rotate(180deg);
+  }
+  header .navigation .navigation-items a:hover{
+    color: black;
+    background: cyan;
+    box-shadow: 0 0 50px cyan;
+    transition-delay: 0.5s;
+  }
+  
+  header .navigation .navigation-items a:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border-top : 2px solid cyan;
+    border-left: 2px solid cyan;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+  }
+  header .navigation .navigation-items a:hover:before{
+    width: 100%;
+    height: 100%;
+    transition-delay: 0s;
+  }
+  
+  header .navigation .navigation-items a:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    border-bottom : 2px solid cyan;
+    border-right: 2px solid cyan;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+  }
+  header .navigation .navigation-items a:hover::after{
+    width: 100%;
+    height: 100%;
+    transition-delay: 0s;
+  }
+  .container{
+    text-align: center;
+    position: absolute;
+  
+  }
+  .btnefx{
+    border: 1px solid white;
+    background: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: "montserrat";
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.8s;
+    border: 3px solid white;
+    position: relative;
+    right: 25px;
+    bottom: 100px;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  .btnefx2{
+    color: white;
+  }
+  .btnefx2:hover{
+    color: black;
+  }
+  .btnefx::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: white;
+    z-index: -1;
+    transition: 0.8s;
+  }
+  
+  .btnefx2::before{
+    bottom: 0;
+    border-radius: 50% 50% 0 0;
+  }
+  
+  .btnefx2:hover::before{
+    height: 180%;
+  }
+  .get-started {
+    margin-left: 30px;
+    padding: 5px 20px;
+    border: 2px solid rgb(86, 0, 136);
+    border-radius: 20px;
+    text-decoration: none;
+    position: absolute;
+    top:650px;
+    left:632px;
+    transition: 1s;
+    background-color: rgb(86, 0, 136);
+    color: #fff;
+  
+  }
+  .get-started:hover {
+    color: lightyellow;
+    --color1: #fffdd0;
+    --color2: #fffdd0;
+    --color3: #fffdd0;
+    --color4: rgba(255, 253, 208, 0.753);
+    --interval: 2s;
+    display: block;
+    box-shadow: 
+      0 0 10px var(--color1),
+      0 0 10px var(--color2),
+      0 0 10px var(--color3),
+      0 0 10px var(--color4);
+  
+    will-change: filter, color;
+    filter: saturate(60%);
+    animation: flicker steps(100) var(--interval) 1s infinite;
+    
+  }

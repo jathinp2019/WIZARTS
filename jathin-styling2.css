@@ -1,0 +1,97 @@
+/* preloader */
+#mypre {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+#loading
+{
+  position: fixed;
+  width: 100%;
+  height: 130vh;
+  background: linear-gradient(black , rgb(25,30,34), rgb(17,20,23)) ;
+  z-index: 99999999;
+  
+
+} 
+
+/* scroll */
+::-webkit-scrollbar {
+  width: 12px;
+
+ }
+ ::-webkit-scrollbar-track {
+  box-shadow: inset transparent; 
+  border-radius: 10px;
+}
+
+ ::-webkit-scrollbar-thumb
+ {
+   background: linear-gradient(transparent, #00b7ff);
+   border-radius: 6px;
+   
+ }
+ ::-webkit-scrollbar-thumb:hover
+ {
+   background: linear-gradient(transparent, #0011ff);
+   
+ }
+ 
+ .cursor
+ {
+   position: fixed;
+   width: 50px;
+   height: 50px;
+   border:1px solid white;
+   border-radius: 50%;
+   left: 0;
+   top: 0;
+   pointer-events: none;
+   transform: translate(-50%,-50%);
+   transition: 0.15s;
+   z-index: 999999999;
+ }
+.cursor2
+{
+  position: fixed;
+   width: 8px;
+   height: 8px;
+   background-color: white;
+   border-radius: 50%;
+   left: 0;
+   top: 0;
+   pointer-events: none;
+   transform: translate(-50%,-50%);
+   transition: 0.1s;
+   z-index: 99999999;
+}
+*
+{
+  cursor: none;
+}
+
+@keyframes transitionIn {
+  from{
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to
+  {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+}
+header{
+  animation: transitionIn 0.7s;
+  animation-delay: 4.75s;
+}
+body{
+  animation: transitionIn 0.7s;
+  animation-delay: 4.75s;
+}

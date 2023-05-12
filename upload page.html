@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+<head>
+   <meta name="referrer" content="origin">
+   <meta name= "viewport" content="
+   width=device-width, intit-scale=1.0">
+   <link rel="stylesheet" href="cursor.css">  
+   <title>Responsive Contact Us Form</title>
+   <link rel="stylesheet" type="text/css" href="style for upload page.css">
+   <link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
+   <script defer src="file upload.js"></script>
+   
+</head>
+<body>
+  <header>
+    <a href="#" class="brand logo" style="position: fixed; bottom: 5in;" >Upload</a>
+    <div class="menu-btn"></div>
+    <div class="navigation">
+      <div class="navigation-items">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact page.html">Contact</a>
+      </div>
+      
+    </div>
+  
+  </header>
+  
+   <background-image><img src="gradient image for upload.jpg" id="bg" alt=""></background-image>
+
+   <div class="cursor"></div>
+   <div class="cursor2"></div>
+<script>
+   var cursor = document.querySelector(".cursor")
+   var cursor2 = document.querySelector(".cursor2")
+   document.addEventListener("mousemove", function(e)
+   {
+       cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
+   });
+
+</script>
+  
+   <div class="container">
+      <h2 class="brand logo" >UPLOAD YOUR ART HERE</h2>
+      <form action="https://formspree.io/f/xqkwlwno" method="POST">
+        <div class="row100">
+          <div class="col">
+            <div class="inputBox">
+              <input type="text" name="first name"required="required">
+              <span class="text">First Name</span>
+              <span class="line"></span>
+           </div>
+         </div>
+
+          <div class="col">
+            <div class="inputBox">
+              <input type="text" name="last name" required="required">
+              <span class="text">Last Name</span>
+              <span class="line"></span>
+           </div>
+         </div>
+       </div>
+       <div class="row100">
+         <div class="col">
+           <div class="inputBox">
+             <input  type="email" name="email" required="required">
+               <span class="text">Email</span>
+               <span class="line"></span>
+           </div>
+         </div>
+
+         <div class="col">
+           <div class="inputBox">
+             <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+               <span class="text">Mobile no.</span>
+               <span class="line"></span>
+           </div>
+         </div>
+       </div>
+     
+     <div class="col">
+           <div class="inputBox">
+            <input id='fileid' type='file' hidden/>
+       <i class="fa fa-upload" aria-hidden="true" style="font-size: 1.5cm; position:relative; left : 3cm;"></i>
+       <input id='buttonid' type='button' value='click here to upload'/>
+            </div>
+         </div>
+
+
+      <div class="row100">
+        <div class="col">
+          <button class="btn" type= "submit">Submit</button>
+       </div>
+     </div> 
+     <form action="https://formspree.io/f/xqkwlwno" method="POST">
+   </div> 
+   </body>
+  </div>
+      
+   
+</body>
+<footer>             
+  <p class="alignleft" style="float:left;">WIZARTS&nbsp;&nbsp;&nbsp;<a href="https://www.facebook.com/profile.php?id=100070744460452" target="_blank"><i class="fab fa-facebook-f fa-lg"></i></a>&nbsp;&nbsp;&nbsp;<a href="https://www.instagram.com/wizarts2021/" target="_blank"><i class="fab fa-instagram fa-lg"></i></a>&nbsp;&nbsp;&nbsp;<a href="https://twitter.com/wizarts2021" target="_blank"><i class="fab fa-twitter fa-lg"></i></a></p><p class="alignright" style="float:right;">Want to display your own work? <a class="x" href="upload page.html" >Upload</a> </p> 
+           </footer>
+</html>

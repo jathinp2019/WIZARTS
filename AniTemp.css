@@ -1,0 +1,786 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:200);
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.logo {
+  color: lightyellow;
+  --color1: yellow;
+  --color2: orange;
+  --color3: brown;
+  --color4: purple;
+  --interval: 1s;
+  display: block;
+  text-shadow: 
+    0 0 10px var(--color1),
+    0 0 20px var(--color2),
+    0 0 40px var(--color3),
+    0 0 80px var(--color4);
+  will-change: filter, color;
+  filter: saturate(60%);
+  animation: flicker steps(100) var(--interval) 1s infinite;
+  font-family: Bad Script;
+
+}
+@keyframes flicker {
+    50% {
+      color: white;
+      filter: saturate(200%) hue-rotate(20deg);
+    }
+  }
+  header{
+    z-index: 999;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 200px;
+    transition: 0.5s ease;
+  }
+  
+  header .brand{
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: 70;
+    text-transform: uppercase;
+    text-decoration: none;
+    
+    font-size: 80px;
+    position:absolute;
+    left:60px;
+    top:30px;
+  }
+  
+  header .navigation{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    min-height: 100vh;
+    background: transparent;
+    position: fixed;
+    right: 50px;
+    bottom:320px;
+  }
+  
+  header .navigation .navigation-items a{
+    position: relative;
+    padding: 10px 20px;
+    margin: 0 15px;
+    color:cyan;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 14px;
+    transition: 0.5s;
+    overflow: hidden;
+    
+  }
+  header .navigation .navigation-items a:nth-child(1){
+    filter: hue-rotate(115deg);
+  }
+  header .navigation .navigation-items a:nth-child(3){
+    filter: hue-rotate(270deg);
+  }
+  header .navigation .navigation-items a:nth-child(4){
+    filter: hue-rotate(180deg);
+  }
+  header .navigation .navigation-items a:hover{
+    color: black;
+    background: cyan;
+    box-shadow: 0 0 50px cyan;
+    transition-delay: 0.5s;
+  }
+  
+  header .navigation .navigation-items a:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border-top : 2px solid cyan;
+    border-left: 2px solid cyan;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+  }
+  header .navigation .navigation-items a:hover:before{
+    width: 100%;
+    height: 100%;
+    transition-delay: 0s;
+  }
+  
+  header .navigation .navigation-items a:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    border-bottom : 2px solid cyan;
+    border-right: 2px solid cyan;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+  }
+  header .navigation .navigation-items a:hover::after{
+    width: 100%;
+    height: 100%;
+    transition-delay: 0s;
+  }
+  
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap');
+  
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap');
+
+body {
+   
+  margin: 0;
+  padding: 0;
+  background: black;
+  margin-bottom:50px;
+  overflow: overlay;
+}
+.container
+{
+   width:1400px;
+   margin: 220px auto 30px auto;
+   columns:4;
+   column-gap: 40px;
+   
+}
+.container .box
+{
+   width:100%;
+   margin: 0px 0px 20px;
+   background: transparent;
+   overflow:hidden;
+   break-inside: avoid;
+   border-radius: 30px ;
+  
+}
+.container .box img
+{
+   
+   height: 100%; 
+   width: 100%; 
+   display: inline-block;
+       position: relative;
+       overflow: hidden;
+       border-radius: 30px;
+}
+
+/* scroll */
+::-webkit-scrollbar {
+  width: 10px;
+  
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset transparent; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(102, 99, 99); 
+  border-radius: 10px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: rgb(37, 34, 34);
+}
+
+/* image hover effect */
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  cursor: pointer;
+}  
+.box:hover .image {
+  transition: .5s ease;
+  transform: scale(1.2);
+  
+}
+
+/* background image */
+.stretch {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* pagination */
+.pagination{
+  position: absolute;
+top:100px;
+  width: 100%;
+  text-align: center;
+  transform: translateY(-50%);
+  
+}
+
+.pagination a{
+  margin: 6px 1px;
+  display: inline-block;
+  width: 60px;
+  background: transparent;
+  height: 60px;
+  line-height: 60px;
+  color: #fff;
+  font-weight: 600;
+  transition: 0.3s;
+  position: relative;
+  top: 1800px;
+  padding-right: 26px;
+  text-decoration: none;
+}
+.prev,.next{
+  padding-right: 12px !important;
+  font-size: 20px;
+}
+.pagination a:hover{
+  color: #e74c3c;
+}
+
+.active{
+  color: #e74c3c !important;
+}
+
+.prev{
+  border-radius: 30px 0 0 30px;
+}
+
+.next{
+  border-radius: 0 30px 30px 0;
+}
+
+/* footer */
+
+
+
+
+  /* footer */
+  footer{
+    position: relative;
+    top: 250px;
+    background-color:#fff;
+    color: rgb(0, 0, 0);
+    height: 100px; 
+    margin-top: 125px;
+    font-size: 20px;
+    vertical-align: middle;
+  }
+  footer .x{
+    background: transparent;
+    padding: 8px 15px;
+    color: #000000;
+    font-size: 1.1em;
+    vertical-align: middle;
+    text-decoration: none;
+    border-radius: 8px;
+    border: 3px solid rgb(0, 0, 0);
+    margin-bottom:0px;  
+  }
+  footer a{
+    text-decoration: none;
+  }
+  footer .x:hover{
+    color: #e74c3c;
+  }
+  footer p{
+    margin-top:35px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  footer i{
+    color:black;
+    display: flex;
+    transition: transform .2s;
+  }
+  footer i:hover{
+    transform: scale(1.5);
+  }
+  
+  /* footer */
+
+  /*box for jscript- sid's work*/
+  #lightbox {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+  }
+  
+  #lightbox.active {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+  
+  #lightbox img {
+    max-width: 120%;
+    max-height: 100%;
+    padding: 4px;
+    border-radius: 0.2in; 
+  }
+
+
+  .wrapper {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-1%, -30%);
+    margin-top: 1in;
+    width: 750px;
+  }
+  
+  /* Style the Un-order list by setting its list-style to none */
+  .wrapper ul {
+    list-style: none;
+  }
+  
+  /* Style the list items inside the UL list, by setting its width, height and line-height 
+    and float them to left and set its border and border-radius.
+   */
+  .wrapper ul li {
+    width: 125px;
+    height: 125px;
+    line-height: 75px;
+    margin: 0 10px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 50%;
+    border: transparent;
+    float: left;
+    transition: all 0.5s ease;
+  }
+  
+  /* Style the icons by setting its color and margin-top value to 20px 
+  to align it properly */
+  .wrapper ul li .fa {
+    color: #D8E2DC;
+    margin-top: 20px;
+    transition: all 0.5s ease;
+  }
+  
+  /* Now target the specific li classes for styling and use box-shadow effect to border and text-shadow effect
+    to icons for glowing effect and use transition property for smooth transition effect. */
+  /*facebook*/
+  .wrapper ul li:hover.Thumbsup {
+    
+    transition: all 0.5s ease;
+  }
+  
+  .wrapper ul li:hover .fa-thumbs-up {
+    color: #00aced;
+    text-shadow: 0 0 15px #00aced;
+    transition: all 0.5s ease;
+  }
+  
+  
+  /* instagram */
+  .wrapper ul li:hover.heart {
+    
+    transition: all 0.5s ease;
+  }
+  
+  .wrapper ul li:hover .fa-heart {
+    color: #bc2a8d;
+    text-shadow: 0 0 15px #bc2a8d;
+    transition: all 0.5s ease;
+  }
+  
+  /* google */
+  .wrapper ul li:hover.shoppingcart{
+  
+    transition: all 0.5s ease;
+  }
+  
+  .wrapper ul li:hover .fa-shopping-cart {
+    color: #dd4b39;
+    text-shadow: 0 0 15px #dd4b39;
+    transition: all 0.5s ease;
+  }
+  
+  /* whatsapp */
+  .wrapper ul li:hover.donatebuy {
+  
+    transition: all 0.5s ease;
+  }
+  
+  .wrapper ul li:hover .fa-dollar-sign {
+    color: #4dc247;
+    text-shadow: 0 0 15px #4dc247;
+    transition: all 0.5s ease;
+  }
+  
+  
+  /* media queries */
+  
+  @media screen and (max-width: 640px){
+    .wrapper {
+        width: 350px;
+    }
+    .wrapper ul li{
+        margin-top: 10px;
+    }
+    .wrapper ul li.google{
+        margin-left: 60px;
+    }
+  }
+  
+  
+  @media screen and (max-width: 340px){
+    .wrapper {
+        width: 150px;
+    }
+    .wrapper ul li{
+        margin:15px;
+    }
+    .wrapper ul li.google{
+        margin-left: 15px;
+    }
+  }
+  
+  
+  
+  .row100 .inputBox
+  {
+      top: 1.6in;
+      right: -0.5in;
+      position: relative;
+      width: 100%;
+      height: 40px;
+      color: #ff007f;
+      z-index: 1;
+  
+  }
+  textarea
+  {
+    margin-left: 2in;
+  
+  
+  }
+  
+  .row100 .inputBox .text
+  {
+      position: absolute;
+      margin-top: 1in;
+      top:  0;
+      left:  7in;
+      line-height:  40px;
+      font-size:  18px;
+      padding:  0 2px;
+      display:  block;
+      transition: 1s;
+      pointer-events: none;
+  
+  }
+  
+  .row100 .inputBox .line
+  {
+     
+      position: absolute;
+      margin-left: 7in;
+      bottom:  0;
+      display:  block;
+      width:  22%;
+      height:  2px;
+      background:  #ff007f;
+      transition: 1s;
+      border-radius: 4px;
+  }
+  
+  .row100 .inputBox.textarea
+  {
+      
+      position: relative;
+      margin-left: 1in;
+      width: 100%;
+      height: 100px;
+      padding: 2px 0;
+  
+  }
+  
+  .row100 .inputBox.textarea
+  {
+      
+      height: 200%;
+      resize: none;
+      
+  
+  }
+  .inputBox input,
+  .inputBox.textarea textarea
+  {
+  
+       position: relative;
+       background: transparent;
+       box-shadow: none;
+       border:  none;
+       outline: none;
+       z-index: 1;
+       color:BLACK;
+  
+  }
+  
+  .row100 .inputBox textarea:focus + .text,
+  .row100 .inputBox textarea:valid + .text
+  {
+     
+     top: -3.4cm;
+     left: 17.5cm;
+  
+  }
+  .row100 .inputBox textarea:focus ~ .line,
+  .row100 .inputBox textarea:valid ~ .line
+  {
+     
+    height: 100%;
+     
+  }
+  
+  
+  .btn{
+    position: relative;
+    top: 100px;
+    left: 13cm;
+    border-radius: 10px;
+    font-size: 16px;
+    height: 2cm;
+    width: 10%;
+    background-color: transparent;
+    border: 2px solid pink;
+    color: pink;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    z-index: 3;
+  }
+  
+  .btn:hover, .btn:focus {
+    -webkit-box-shadow: inset 0px 0px 8px 3px #ff94b8;
+    box-shadow: 0px 0px 10px 3px #ff94b8, inset 0px 0px 10px 3px #ff94b8;
+    border-color: #fff;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ff94b8, 0 0 40px #ff94b8, 0 0 50px #ff94b8, 0 0 60px #ff94b8, 0 0 70px #ff94b8
+  }
+  
+  
+  
+  .icon-button {
+    bottom: 8cm;
+    margin-left: 0.3cm;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    color: #333333;
+    background: #dddddd;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .icon-button__badge {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 25px;
+    height: 25px;
+    background: red;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+  }
+  
+  .snip1578 {
+    font-family: 'Open Sans', Arial, sans-serif;
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+    min-width: 230px;
+    max-width: 600px;
+    width: 100%;
+    color: #000;
+    text-align: left;
+    font-size: 16px;
+    background: transparent;
+    border-radius: 5px;
+    bottom: 2.5in;
+    left: 0in;
+  }
+  
+  .snip1578 *,
+  .snip1578:before,
+  .snip1578:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+  }
+  
+  .snip1578 img {
+    max-width: 50%;
+    margin-top: -20px;
+    margin-left: 4%;
+    margin-bottom: 15px;
+    backface-visibility: hidden;
+    vertical-align: top;
+    border-radius: 170px;
+  }
+  
+  .snip1578 figcaption {
+    position: absolute;
+    top: 4cm;
+    right: 40%;
+    left: 0;
+    padding: 15px;
+  }
+  
+  
+  .snip1578 .icons {
+    font-size: 1.6rem;
+   
+    
+  }
+  
+  .snip1578 .icons a {
+    color: #ccc;
+    float: left;
+    
+  }
+  
+  .snip1578 .icons a:hover {
+    color: #2980b9;
+  }
+  
+  .brand.logo
+  {
+    bottom: 4in;
+  
+  }
+      
+  .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2000;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    background-color: rgb(0, 0, 0, 0.4);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    color:tomato;
+    position: absolute;
+    top: -10px;
+    right: 5px;
+    font-size: 30px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+  }
+
+  .share-list {
+  display: grid;
+
+
+}
+
+.share-list a {
+  border-radius: 300px;
+  width: 50px;
+  height: 50px;
+  padding: 3.4px;
+  margin: 8px;
+  cursor: pointer;
+  overflow: hidden;
+  
+}
+
+a.fb-h { background: #3B5998; size: 0.1cm; }
+a.tw-h { background: #00acee; }
+a.li-h { background: #0077B5; }
+a.re-h { background: #FF5700; }
+a.pi-h { background: #c8232c; }
+
+
+
+/* */ Page Styling
+ {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.share-buttons-container {
+  display: grid;
+  justify-content: safe right;
+  left: 15.2in;
+  position: relative;
+  bottom: 2in;
+  align-items: center;
+  background: transparent;
+  width: 50px;
+  height: 50px;
+}

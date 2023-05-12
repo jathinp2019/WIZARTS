@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="socials.css">
+    <link rel="stylesheet" href="jathin-styling.css">
+    <link rel="stylesheet" href="jathin-intro.css">
+</head>
+<header>
+  <a href="index.html" class="brand logo">WIZARTS</a>
+  <div class="menu-btn"></div>
+  <div class="navigation">
+    <div class="navigation-items">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="about.html">About</a>
+      <a href="contact page.html">Contact</a>
+    </div>
+  </div>
+</header>
+<!--jathin part start-->
+<body onload="myfunction()">
+
+<div id="loading"> 
+  <video autoplay muted loop id="mypre">
+      <source src="bg image and videos/UID_proj.mp4">
+    </video>
+</div>
+
+<div class="cursor"></div>
+            <div class="cursor2"></div>
+        <script>
+            var preloader = document.getElementById('loading');
+            setTimeout(function myfunction()
+            {
+                preloader.style.display = 'none';
+            }, 5000);
+        </script>
+        <script>
+            var cursor = document.querySelector(".cursor")
+            var cursor2 = document.querySelector(".cursor2")
+            document.addEventListener("mousemove", function(e)
+            {
+                cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
+            });
+
+        </script>
+
+
+<!-- jathin part end-->
+<!--Tejas's part START-->
+
+
+    
+  
+      <section class="home">
+        <video class="video-slide active" src="bg image and videos/main page.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="bg image and videos/nature.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="bg image and videos/astrophotography.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="bg image and videos/gaming.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="bg image and videos/anime.mp4" autoplay muted loop></video>
+
+
+
+        <div class="content active">
+          <h1 class="title1">Welcome<br></h1>
+          <a class="get-started" href="vithya.html"><i>Get Started</i></a>
+        </div>
+        <div class="content">
+          <h1 class="title2">Nature<br><span></span></h1>
+          <div class="container">
+            <a href="nature1.html" style="border: transparent;"><button class="btnefx btnefx2">View</button></a>
+          </div>
+        </div>
+        <div class="content">
+          <h1 class="title3">Astrophotography<br><span></span></h1>
+          <div class="container">
+            <a href="ast1.html" style="border: transparent;"><button class="btnefx btnefx2">View</button></a>
+          </div>
+        </div>
+        <div class="content">
+          <h1 class="title4">Gaming<br><span></span></h1>
+          <div class="container">
+            <a href="gaming1.html" style="border: transparent;"><button class="btnefx btnefx2">View</button></a>
+          </div>
+        </div>
+        <div class="content">
+          <h1 class="titles">Anime<br><span></span></h1>
+          <div class="container">
+            <a href="anime1.html" style="border: transparent;"><button class="btnefx btnefx2">View</button></a>
+          </div>
+        </div>
+
+        
+        <div class="media-icons">
+            <div class="menu">
+                <input type="checkbox" id="toggle" />
+                <label id="show-menu" for="toggle">
+                  <div class="btn">
+                    <i class="material-icons md-36 toggleBtn menuBtn"><img src="bg image and videos/Icons/share.png" alt=""  width="30px" style="position: relative; top: 7px;"></i>
+                  </i>
+                    <i class="material-icons md-36 toggleBtn closeBtn"><img src="bg image and videos/Icons/cancel.png" alt="" width="30px" style="position: relative; top: 7px;"></i>
+                  </div>
+                  <div class="btn">
+                    <a href="https://www.facebook.com/profile.php?id=100070744460452" target="_blank"><i class="material-icons md-36"><img src="bg image and videos/Icons/fb.png" alt="" width="30px" style="position: relative; top: 7px;"></i></a>
+                  </div>
+                  <div class="btn">
+                    <a href="https://github.com/Wizarts2021" target="_blank"> <i class="material-icons md-36"><img src="bg image and videos/Icons/git.png" alt="" width="30px" style="position: relative; top: 7px;"></i></a>
+                  </div>
+                  <div class="btn">
+                    <a href="https://www.instagram.com/wizarts2021/" target="_blank"> <i class="material-icons md-36"><img src="bg image and videos/Icons/insta.png" alt="" width="30px" style="position: relative; top: 7px;"></i></a>
+                  </div>
+                  <div class="btn">
+                    <a href="https://twitter.com/wizarts2021" target="_blank"><i class="material-icons md-36"><img src="bg image and videos/Icons/twitter.png" alt="" width="30px" style="position: relative; top: 7px;"></i></a>
+                  </div>
+                  <div class="btn">
+                    <a href="https://www.youtube.com/channel/UCJOT6syGLsMlbnpWZavVD8Q" target="_blank"> <i class="material-icons md-36"><img src="bg image and videos/Icons/yt.png" alt="" width="30px" style="position: relative; top: 7px;"></i></a>
+                  </div>
+                </label>
+              </div>
+        </div>
+        <div class="slider-navigation">
+          <div class="nav-btn active"></div>
+          <div class="nav-btn"></div>
+          <div class="nav-btn"></div>
+          <div class="nav-btn"></div>
+          <div class="nav-btn"></div>
+        </div>
+      </section>
+  
+
+
+
+
+<!-- java script-->
+
+
+
+      <script type="text/javascript">
+      //Javacript for responsive navigation menu
+      const menuBtn = document.querySelector(".menu-btn");
+      const navigation = document.querySelector(".navigation");
+  
+      menuBtn.addEventListener("click", () => {
+        menuBtn.classList.toggle("active");
+        navigation.classList.toggle("active");
+      });
+  
+
+
+      //Javacript for video slider navigation
+      const btns = document.querySelectorAll(".nav-btn");
+      const slides = document.querySelectorAll(".video-slide");
+      const contents = document.querySelectorAll(".content");
+  
+      var sliderNav = function(manual){
+        btns.forEach((btn) => {
+          btn.classList.remove("active");
+        });
+  
+        slides.forEach((slide) => {
+          slide.classList.remove("active");
+        });
+  
+        contents.forEach((content) => {
+          content.classList.remove("active");
+        });
+  
+        btns[manual].classList.add("active");
+        slides[manual].classList.add("active");
+        contents[manual].classList.add("active");
+      }
+  
+      btns.forEach((btn, i) => {
+        btn.addEventListener("click", () => {
+          sliderNav(i);
+        });
+      });
+      </script>
+  
+  
+</body>
+</html>
+
+
+
+
+<!--Tejas's part END-->

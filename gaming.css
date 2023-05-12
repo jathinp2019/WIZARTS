@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.logo {
+  color: lightyellow;
+  --color1: yellow;
+  --color2: orange;
+  --color3: brown;
+  --color4: purple;
+  --interval: 1s;
+  display: block;
+  text-shadow: 
+    0 0 10px var(--color1),
+    0 0 20px var(--color2),
+    0 0 40px var(--color3),
+    0 0 80px var(--color4);
+  will-change: filter, color;
+  filter: saturate(60%);
+  animation: flicker steps(100) var(--interval) 1s infinite;
+  font-family: Bad Script;
+
+}
+@keyframes flicker {
+    50% {
+      color: white;
+      filter: saturate(200%) hue-rotate(20deg);
+    }
+  }
+  header{
+    z-index: 999;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 200px;
+    transition: 0.5s ease;
+  }
+  
+  header .brand{
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: 70;
+    text-transform: uppercase;
+    text-decoration: none;
+    
+    font-size: 80px;
+    position:absolute;
+    left:60px;
+    top:30px;
+  }
+  
+  header .navigation{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    min-height: 100vh;
+    background: transparent;
+    position: fixed;
+    right: 50px;
+    bottom:320px;
+  }
+  
+  header .navigation .navigation-items a{
+    position: relative;
+    padding: 10px 20px;
+    margin: 0 15px;
+    color:cyan;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 14px;
+    transition: 0.5s;
+    overflow: hidden;
+    
+  }
+  header .navigation .navigation-items a:nth-child(1){
+    filter: hue-rotate(115deg);
+  }
+  header .navigation .navigation-items a:nth-child(3){
+    filter: hue-rotate(270deg);
+  }
+  header .navigation .navigation-items a:nth-child(4){
+    filter: hue-rotate(180deg);
+  }
+  header .navigation .navigation-items a:hover{
+    color: black;
+    background: cyan;
+    box-shadow: 0 0 50px cyan;
+    transition-delay: 0.5s;
+  }
+  
+  header .navigation .navigation-items a:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border-top : 2px solid cyan;
+    border-left: 2px solid cyan;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+  }
+  header .navigation .navigation-items a:hover:before{
+    width: 100%;
+    height: 100%;
+    transition-delay: 0s;
+  }
+  
+  header .navigation .navigation-items a:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    border-bottom : 2px solid cyan;
+    border-right: 2px solid cyan;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+  }
+  header .navigation .navigation-items a:hover::after{
+    width: 100%;
+    height: 100%;
+    transition-delay: 0s;
+  }
+  
+
+body {
+   
+  margin: 0;
+  padding: 0;
+  background: black;
+  margin-bottom:50px;
+  overflow: overlay;
+}
+.container
+{
+   width:1400px;
+   margin: 220px auto 30px auto;
+   columns:4;
+   column-gap: 40px;
+   
+}
+.container .box
+{
+   width:100%;
+   margin: 0px 0px 20px;
+   background: transparent;
+   overflow:hidden;
+   break-inside: avoid;
+   border-radius: 30px ;
+  
+}
+.container .box img
+{
+   
+   height: 100%; 
+   width: 100%; 
+   display: inline-block;
+       position: relative;
+       overflow: hidden;
+       border-radius: 30px;
+}
+
+/* scroll */
+::-webkit-scrollbar {
+  width: 10px;
+  
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset transparent; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(102, 99, 99); 
+  border-radius: 10px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: rgb(37, 34, 34);
+}
+
+/* image hover effect */
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}  
+.box:hover .image {
+  transition: .5s ease;
+  transform: scale(1.2);
+  
+}
+
+/* background image */
+.stretch {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* pagination */
+.pagination{
+  position: absolute;
+top:100px;
+  width: 100%;
+  text-align: center;
+  transform: translateY(-50%);
+  
+}
+
+.pagination a{
+  margin: 6px 1px;
+  display: inline-block;
+  width: 60px;
+  background: transparent;
+  height: 60px;
+  line-height: 60px;
+  color: #fff;
+  font-weight: 600;
+  transition: 0.3s;
+  position: relative;
+  top: 1340px;
+  padding-right: 26px;
+  text-decoration: none;
+}
+.prev,.next{
+  padding-right: 12px !important;
+  font-size: 20px;
+}
+.pagination a:hover{
+  color: #e74c3c;
+}
+
+.active{
+  color: #e74c3c !important;
+}
+
+.prev{
+  border-radius: 30px 0 0 30px;
+}
+
+.next{
+  border-radius: 0 30px 30px 0;
+}
+
+/* footer */
+
+
+
+
+  /* footer */
+  footer{
+    position: relative;
+    top: 250px;
+    background-color:#fff;
+    color: rgb(0, 0, 0);
+    height: 100px; 
+    margin-top: 125px;
+    font-size: 20px;
+    vertical-align: middle;
+  }
+  footer .x{
+    background: transparent;
+    padding: 8px 15px;
+    color: #000000;
+    font-size: 1.1em;
+    vertical-align: middle;
+    text-decoration: none;
+    border-radius: 8px;
+    border: 3px solid rgb(0, 0, 0);
+    margin-bottom:0px;  
+  }
+  footer a{
+    text-decoration: none;
+  }
+  footer .x:hover{
+    color: #e74c3c;
+  }
+  footer p{
+    margin-top:35px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  footer i{
+    color:black;
+    display: flex;
+    transition: transform .2s;
+  }
+  footer i:hover{
+    transform: scale(1.5);
+  }
+  
+  

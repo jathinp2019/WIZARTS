@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewpoint" content="width=device-width", intital-scale=1.0>  
+<link rel="stylesheet" href="shop-anime.css">
+<link rel="stylesheet" href="jathin-styling2.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/5833e0d676.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="Swiper files/swiper.min.css">
+</head>
+
+<header>
+    <a href="#" class="brand logo" style="color: black;">Gaming</a>
+    <div class="menu-btn"></div>
+    <div class="navigation">
+      <div class="navigation-items">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact page.html">Contact</a>
+      </div>
+      
+    </div>
+  
+  </header>
+    
+       <!--jathin part start-->
+<body onload="myfunction()">
+
+    <div id="loading"> 
+      <video autoplay muted loop id="mypre">
+          <source src="bg image and videos/Polygon - 6824.mp4">
+        </video>
+    </div>
+    
+    <div class="cursor"></div>
+                <div class="cursor2"></div>
+            <script>
+                var preloader = document.getElementById('loading');
+                setTimeout(function myfunction()
+                {
+                    preloader.style.display = 'none';
+                }, 5000);
+            </script>
+            <script>
+                var cursor = document.querySelector(".cursor")
+                var cursor2 = document.querySelector(".cursor2")
+                document.addEventListener("mousemove", function(e)
+                {
+                    cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
+                });
+    
+            </script>
+    
+    
+    <!-- jathin part end-->
+        <video autoplay muted loop id="myVideo">
+            <source src="shop-pics/anime-bg.mp4" type="video/mp4">
+          </video>
+        <section id="slider-container">
+
+            <div class="swiper-container mySwiper">
+                <div class="swiper-wrapper">
+                    <!--Slider 1-->
+                  <div class="swiper-slide">
+                    <div class="slider-box">
+                        <div class="slider-img">
+                            <img src="shop-pics/anime 1.jpg" alt="1stimage">
+                        </div>
+                        <div class="slider-details">
+                            <strong>Swingin' Slide </strong>
+                            <p><em>Overall customer rating :-</em></p>
+                            <div class="rating">
+                                <a href="#">
+                                    <i class="fas fa-star"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fas fa-star"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fas fa-star"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fas fa-star"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fas fa-star-half-alt"></i>
+                                </a>
+                            </div>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea quas ut, accusamus placeat quia iusto nihil, quibusdam voluptas officia consequuntur voluptates ipsa eveniet maxime esse perferendis qui excepturi beatae! Quae?</p>
+                            <div class="artists">
+                                    <a href="#"><img src="shop-pics/person1.png" alt="artist"></a>
+                                    <a href="#"><img src="shop-pics/person2.png" alt="artist"></a>
+                                    <a href="#"><img src="shop-pics/person3.png" alt="artist"></a>
+                                    <a href="#"><img src="shop-pics/person4.png" alt="artist"></a>
+                                    <a href="#"><img src="shop-pics/person5.png" alt="artist"></a>
+                                    <a href="#" class="more-artists">9+</a>
+                            </div>
+                            <div class="buttons">
+                                <a href="payment.html" class="nature-shop"><i class="fas fa-tags"></i>Buy Now</a>
+                            </div>
+                            
+                        </div>
+                </div>
+                  </div>
+                   <!--Slider 2-->
+                  <div class="swiper-slide">
+                    <div class="slider-box">
+                        <div class="slider-img">
+                            <img src="shop-pics/anime 2.jpg" alt="1stimage">
+                        </div>
+                        <div class="slider-details">
+                            <strong>Nature's world</strong>
+                            <p><em>Overall customer rating :-</em></p>
+                            <div class="rating">
+                                <a href="#">
+                                    <i class="fas fa-star"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fas fa-star"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fas fa-star"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fas fa-star"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="far fa-star"></i>
+                                </a>
+                            </div>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea quas ut, accusamus placeat quia iusto nihil, quibusdam voluptas officia consequuntur voluptates ipsa eveniet maxime esse perferendis qui excepturi beatae! Quae?</p>
+                            <div class="artists">
+                                <a href="#"><img src="shop-pics/person1.png" alt="artist"></a>
+                                <a href="#"><img src="shop-pics/person2.png" alt="artist"></a>
+                                <a href="#"><img src="shop-pics/person3.png" alt="artist"></a>
+                                <a href="#"><img src="shop-pics/person4.png" alt="artist"></a>
+                                <a href="#"><img src="shop-pics/person5.png" alt="artist"></a>
+                                    <a href="#" class="more-artists">9+</a>
+                            </div>
+                            <div class="buttons">
+                                <a href="payment.html" class="nature-shop"><i class="fas fa-tags"></i>Buy Now</a>
+                            </div>
+                            
+                        </div>
+                </div>
+                  </div>
+                   <!--Slider 3-->
+                  <div class="swiper-slide">
+                    <div class="slider-box">
+                        <div class="slider-img">
+                            <img src="shop-pics/anime 3.jpg" alt="1stimage">
+                        </div>
+                        <div class="slider-details">
+                            <strong>SunSet Frenzy</strong>
+                            <p><em>Overall customer rating :-</em></p>
+                            <div class="rating">
+                                <a href="#">
+                                    <i class="fas fa-star"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fas fa-star"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fas fa-star"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fas fa-star"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fas fa-star-half-alt"></i>
+                                </a>
+                            </div>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea quas ut, accusamus placeat quia iusto nihil, quibusdam voluptas officia consequuntur voluptates ipsa eveniet maxime esse perferendis qui excepturi beatae! Quae?</p>
+                            <div class="artists">
+                                <a href="#"><img src="shop-pics/person1.png" alt="artist"></a>
+                                <a href="#"><img src="shop-pics/person2.png" alt="artist"></a>
+                                <a href="#"><img src="shop-pics/person3.png" alt="artist"></a>
+                                <a href="#"><img src="shop-pics/person4.png" alt="artist"></a>
+                                <a href="#"><img src="shop-pics/person5.png" alt="artist"></a>
+                                    <a href="#" class="more-artists">9+</a>
+                            </div>
+                            <div class="buttons">
+                                <a href="payment.html" class="nature-shop"><i class="fas fa-tags"></i>Buy Now</a>
+                            </div>
+                            
+                        </div>
+                </div>
+                  </div>
+                   <!--Slider 4-->
+                  <div class="swiper-slide">
+                    <div class="slider-box">
+                        <div class="slider-img">
+                            <img src="shop-pics/anime 4.jpg" alt="1stimage">
+                        </div>
+                        <div class="slider-details">
+                            <strong>Lonely Roads</strong>
+                            <p><em>Overall customer rating :-</em></p>
+                            <div class="rating">
+                                <a href="#">
+                                    <i class="fas fa-star"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fas fa-star"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fas fa-star"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fas fa-star-half-alt"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="far fa-star"></i>
+                                </a>
+                            </div>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea quas ut, accusamus placeat quia iusto nihil, quibusdam voluptas officia consequuntur voluptates ipsa eveniet maxime esse perferendis qui excepturi beatae! Quae?</p>
+                            <div class="artists">
+                                <a href="#"><img src="shop-pics/person1.png" alt="artist"></a>
+                                <a href="#"><img src="shop-pics/person2.png" alt="artist"></a>
+                                <a href="#"><img src="shop-pics/person3.png" alt="artist"></a>
+                                <a href="#"><img src="shop-pics/person4.png" alt="artist"></a>
+                                <a href="#"><img src="shop-pics/person5.png" alt="artist"></a>
+                                    <a href="#" class="more-artists">9+</a>
+                            </div>
+                            <div class="buttons">
+                                <a href="payment.html" class="nature-shop"><i class="fas fa-tags"></i>Buy Now</a>
+                            </div>
+                            
+                        </div>
+                </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slider-box">
+                        <div class="slider-img">
+                            <img src="shop-pics/anime 5.jpg" alt="1stimage">
+                        </div>
+                        <div class="slider-details">
+                            <strong>Sakura no ki</strong>
+                            <p><em>Overall customer rating :-</em></p>
+                            <div class="rating">
+                                <a href="#">
+                                    <i class="fas fa-star"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fas fa-star"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fas fa-star"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fas fa-star-half-alt"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="far fa-star"></i>
+                                </a>
+                            </div>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea quas ut, accusamus placeat quia iusto nihil, quibusdam voluptas officia consequuntur voluptates ipsa eveniet maxime esse perferendis qui excepturi beatae! Quae?</p>
+                            <div class="artists">
+                                <a href="#"><img src="shop-pics/person1.png" alt="artist"></a>
+                                <a href="#"><img src="shop-pics/person2.png" alt="artist"></a>
+                                <a href="#"><img src="shop-pics/person3.png" alt="artist"></a>
+                                <a href="#"><img src="shop-pics/person4.png" alt="artist"></a>
+                                <a href="#"><img src="shop-pics/person5.png" alt="artist"></a>
+                                    <a href="#" class="more-artists">9+</a>
+                            </div>
+                            <div class="buttons">
+                                <a href="payment.html" class="nature-shop"><i class="fas fa-tags"></i>Buy Now</a>
+                            </div>
+                            
+                        </div>
+                </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>               
+        </section>      
+        <script type="text/javascript" src="Swiper files/swiper.min.js"></script>
+          <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          effect: "coverflow",
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: "auto",
+          coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+          },
+        });
+      </script>
+    </body>
+    <footer>             
+        <p class="alignleft" style="float:left;">WIZARTS&nbsp;&nbsp;&nbsp;<a href="https://www.facebook.com/profile.php?id=100070744460452" target="_blank"><i class="fab fa-facebook-f fa-lg"></i></a>&nbsp;&nbsp;&nbsp;<a href="https://www.instagram.com/wizarts2021/" target="_blank"><i class="fab fa-instagram fa-lg"></i></a>&nbsp;&nbsp;&nbsp;<a href="https://twitter.com/wizarts2021" target="_blank"><i class="fab fa-twitter fa-lg"></i></a></p><p class="alignright" style="float:right;">Want to display your own work? <a class="x" href="upload page.html" >Upload</a> </p> 
+                 </footer>
+</html>
